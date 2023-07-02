@@ -1,0 +1,11 @@
+pulse_detector_v4/Pulse Detector/Compute Power --> Compute_Power
+pulse_detector_v4/Pulse Detector/Local Peak/MATLAB Function --> MATLAB_Function
+pulse_detector_v4/Pulse Detector/Local Peak --> Local_Peak
+pulse_detector_v4/Pulse Detector/Discrete FIR Filter/Filter/FilterCoef --> FilterCoef
+pulse_detector_v4/Pulse Detector/Discrete FIR Filter/Filter/FilterCoef --> FilterCoef_block
+pulse_detector_v4/Pulse Detector/Discrete FIR Filter/Filter/FilterCoef --> FilterCoef_block1
+pulse_detector_v4/Pulse Detector/Discrete FIR Filter/Filter/subFilter/FilterTapSystolicWvldin --> FilterTapSystolicWvldin
+pulse_detector_v4/Pulse Detector/Discrete FIR Filter/Filter/subFilter --> subFilter
+pulse_detector_v4/Pulse Detector/Discrete FIR Filter/Filter --> Filter
+pulse_detector_v4/Pulse Detector/Discrete FIR Filter --> Discrete_FIR_Filter
+pulse_detector_v4/Pulse Detector --> Pulse_Detector

@@ -1,0 +1,12 @@
+vlib work
+vlog  Compute_Power.v
+vlog  MATLAB_Function.v
+vlog  Local_Peak.v
+vlog  FilterCoef.v
+vlog  FilterCoef_block.v
+vlog  FilterCoef_block1.v
+vlog  FilterTapSystolicWvldin.v
+vlog  subFilter.v
+vlog  Filter.v
+vlog  Discrete_FIR_Filter.v
+vlog  Pulse_Detector.v

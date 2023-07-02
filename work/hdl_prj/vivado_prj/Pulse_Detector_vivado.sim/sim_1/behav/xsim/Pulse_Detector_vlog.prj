@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../hdlsrc/pulse_detector_v4/Compute_Power.v" \
+"../../../../../hdlsrc/pulse_detector_v4/Discrete_FIR_Filter.v" \
+"../../../../../hdlsrc/pulse_detector_v4/Filter.v" \
+"../../../../../hdlsrc/pulse_detector_v4/FilterCoef.v" \
+"../../../../../hdlsrc/pulse_detector_v4/FilterCoef_block.v" \
+"../../../../../hdlsrc/pulse_detector_v4/FilterCoef_block1.v" \
+"../../../../../hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" \
+"../../../../../hdlsrc/pulse_detector_v4/Local_Peak.v" \
+"../../../../../hdlsrc/pulse_detector_v4/MATLAB_Function.v" \
+"../../../../../hdlsrc/pulse_detector_v4/subFilter.v" \
+"../../../../../hdlsrc/pulse_detector_v4/Pulse_Detector.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

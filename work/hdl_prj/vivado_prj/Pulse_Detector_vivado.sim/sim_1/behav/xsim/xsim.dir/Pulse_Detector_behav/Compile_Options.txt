@@ -1,0 +1,1 @@
+-wto "61f87babb68b4b4288321ec6aadd47f9" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Pulse_Detector_behav" "xil_defaultlib.Pulse_Detector" "xil_defaultlib.glbl" -log "elaborate.log" 

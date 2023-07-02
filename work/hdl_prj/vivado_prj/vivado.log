@@ -1,0 +1,720 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Jul  2 17:48:46 2023
+# Process ID: 11924
+# Current directory: C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28820 C:\Users\Lenovo\Desktop\proj2\HDL-Coder-Self-Guided-Tutorial-master\pulse_detector\work\hdl_prj\vivado_prj\Pulse_Detector_vivado.xpr
+# Log file: C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/vivado.log
+# Journal file: C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 830.625 ; gain = 120.090
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pulse_Detector' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Pulse_Detector_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Compute_Power.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Compute_Power
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Discrete_FIR_Filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Discrete_FIR_Filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterCoef.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FilterCoef
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterCoef_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FilterCoef_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterCoef_block1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FilterCoef_block1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FilterTapSystolicWvldin
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Local_Peak.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Local_Peak
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/MATLAB_Function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MATLAB_Function
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/subFilter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subFilter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Pulse_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pulse_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 61f87babb68b4b4288321ec6aadd47f9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Pulse_Detector_behav xil_defaultlib.Pulse_Detector xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FilterCoef
+Compiling module xil_defaultlib.FilterTapSystolicWvldin
+Compiling module xil_defaultlib.subFilter
+Compiling module xil_defaultlib.FilterCoef_block1
+Compiling module xil_defaultlib.FilterCoef_block
+Compiling module xil_defaultlib.Filter
+Compiling module xil_defaultlib.Discrete_FIR_Filter
+Compiling module xil_defaultlib.Compute_Power
+Compiling module xil_defaultlib.MATLAB_Function
+Compiling module xil_defaultlib.Local_Peak
+Compiling module xil_defaultlib.Pulse_Detector
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Pulse_Detector_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim/xsim.dir/Pulse_Detector_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul  2 17:50:12 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 859.770 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Pulse_Detector_behav -key {Behavioral:sim_1:Functional:Pulse_Detector} -tclbatch {Pulse_Detector.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Pulse_Detector.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Pulse_Detector_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 874.887 ; gain = 15.117
+file mkdir C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.srcs/sim_1/new/pulse_detector_TB.v w ]
+add_files -fileset sim_1 C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.srcs/sim_1/new/pulse_detector_TB.v
+update_compile_order -fileset sim_1
+set_property top pulse_detector_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property used_in_implementation false [get_files  C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Pulse_Detector.v]
+set_property used_in_simulation false [get_files  C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Pulse_Detector.v]
+launch_runs synth_1 -jobs 8
+[Sun Jul  2 21:20:47 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z035fbg676-1
+INFO: [Netlist 29-17] Analyzing 302 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z035fbg676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/clock_constraint.xdc]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/clock_constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 1566.395 ; gain = 623.305
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulse_detector_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pulse_detector_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.srcs/sim_1/new/pulse_detector_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_detector_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 61f87babb68b4b4288321ec6aadd47f9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_detector_TB_behav xil_defaultlib.pulse_detector_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FilterCoef
+Compiling module xil_defaultlib.FilterTapSystolicWvldin
+Compiling module xil_defaultlib.subFilter
+Compiling module xil_defaultlib.FilterCoef_block1
+Compiling module xil_defaultlib.FilterCoef_block
+Compiling module xil_defaultlib.Filter
+Compiling module xil_defaultlib.Discrete_FIR_Filter
+Compiling module xil_defaultlib.Compute_Power
+Compiling module xil_defaultlib.MATLAB_Function
+Compiling module xil_defaultlib.Local_Peak
+Compiling module xil_defaultlib.Pulse_Detector
+Compiling module xil_defaultlib.pulse_detector_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulse_detector_TB_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim/xsim.dir/pulse_detector_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul  2 21:30:43 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2021.812 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulse_detector_TB_behav -key {Behavioral:sim_1:Functional:pulse_detector_TB} -tclbatch {pulse_detector_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source pulse_detector_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+                   0inputs ce_out= 1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulse_detector_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 2031.922 ; gain = 10.109
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulse_detector_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pulse_detector_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.srcs/sim_1/new/pulse_detector_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_detector_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 61f87babb68b4b4288321ec6aadd47f9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_detector_TB_behav xil_defaultlib.pulse_detector_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FilterCoef
+Compiling module xil_defaultlib.FilterTapSystolicWvldin
+Compiling module xil_defaultlib.subFilter
+Compiling module xil_defaultlib.FilterCoef_block1
+Compiling module xil_defaultlib.FilterCoef_block
+Compiling module xil_defaultlib.Filter
+Compiling module xil_defaultlib.Discrete_FIR_Filter
+Compiling module xil_defaultlib.Compute_Power
+Compiling module xil_defaultlib.MATLAB_Function
+Compiling module xil_defaultlib.Local_Peak
+Compiling module xil_defaultlib.Pulse_Detector
+Compiling module xil_defaultlib.pulse_detector_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulse_detector_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulse_detector_TB_behav -key {Behavioral:sim_1:Functional:pulse_detector_TB} -tclbatch {pulse_detector_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source pulse_detector_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+                   0inputs ce_out= 1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulse_detector_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2035.875 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulse_detector_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pulse_detector_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.srcs/sim_1/new/pulse_detector_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_detector_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 61f87babb68b4b4288321ec6aadd47f9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_detector_TB_behav xil_defaultlib.pulse_detector_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FilterCoef
+Compiling module xil_defaultlib.FilterTapSystolicWvldin
+Compiling module xil_defaultlib.subFilter
+Compiling module xil_defaultlib.FilterCoef_block1
+Compiling module xil_defaultlib.FilterCoef_block
+Compiling module xil_defaultlib.Filter
+Compiling module xil_defaultlib.Discrete_FIR_Filter
+Compiling module xil_defaultlib.Compute_Power
+Compiling module xil_defaultlib.MATLAB_Function
+Compiling module xil_defaultlib.Local_Peak
+Compiling module xil_defaultlib.Pulse_Detector
+Compiling module xil_defaultlib.pulse_detector_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulse_detector_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulse_detector_TB_behav -key {Behavioral:sim_1:Functional:pulse_detector_TB} -tclbatch {pulse_detector_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source pulse_detector_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+                   0inputs ce_out= 1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulse_detector_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulse_detector_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pulse_detector_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.srcs/sim_1/new/pulse_detector_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_detector_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 61f87babb68b4b4288321ec6aadd47f9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_detector_TB_behav xil_defaultlib.pulse_detector_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FilterCoef
+Compiling module xil_defaultlib.FilterTapSystolicWvldin
+Compiling module xil_defaultlib.subFilter
+Compiling module xil_defaultlib.FilterCoef_block1
+Compiling module xil_defaultlib.FilterCoef_block
+Compiling module xil_defaultlib.Filter
+Compiling module xil_defaultlib.Discrete_FIR_Filter
+Compiling module xil_defaultlib.Compute_Power
+Compiling module xil_defaultlib.MATLAB_Function
+Compiling module xil_defaultlib.Local_Peak
+Compiling module xil_defaultlib.Pulse_Detector
+Compiling module xil_defaultlib.pulse_detector_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulse_detector_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulse_detector_TB_behav -key {Behavioral:sim_1:Functional:pulse_detector_TB} -tclbatch {pulse_detector_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source pulse_detector_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+                   0inputs ce_out= 1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulse_detector_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulse_detector_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pulse_detector_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.srcs/sim_1/new/pulse_detector_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_detector_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 61f87babb68b4b4288321ec6aadd47f9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_detector_TB_behav xil_defaultlib.pulse_detector_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Pulse_Detector.v" Line 42. Module Pulse_Detector has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Discrete_FIR_Filter.v" Line 23. Module Discrete_FIR_Filter has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Filter.v" Line 21. Module Filter has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterCoef.v" Line 21. Module FilterCoef has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/subFilter.v" Line 21. Module subFilter has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4100' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FilterCoef
+Compiling module xil_defaultlib.FilterTapSystolicWvldin
+Compiling module xil_defaultlib.subFilter
+Compiling module xil_defaultlib.FilterCoef_block1
+Compiling module xil_defaultlib.FilterCoef_block
+Compiling module xil_defaultlib.Filter
+Compiling module xil_defaultlib.Discrete_FIR_Filter
+Compiling module xil_defaultlib.Compute_Power
+Compiling module xil_defaultlib.MATLAB_Function
+Compiling module xil_defaultlib.Local_Peak
+Compiling module xil_defaultlib.Pulse_Detector
+Compiling module xil_defaultlib.pulse_detector_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulse_detector_TB_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2043.473 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulse_detector_TB_behav -key {Behavioral:sim_1:Functional:pulse_detector_TB} -tclbatch {pulse_detector_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source pulse_detector_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulse_detector_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2043.473 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulse_detector_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pulse_detector_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.srcs/sim_1/new/pulse_detector_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_detector_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 61f87babb68b4b4288321ec6aadd47f9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_detector_TB_behav xil_defaultlib.pulse_detector_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Pulse_Detector.v" Line 42. Module Pulse_Detector has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Discrete_FIR_Filter.v" Line 23. Module Discrete_FIR_Filter has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Filter.v" Line 21. Module Filter has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterCoef.v" Line 21. Module FilterCoef has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/subFilter.v" Line 21. Module subFilter has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/FilterTapSystolicWvldin.v" Line 21. Module FilterTapSystolicWvldin has a timescale but at least one module in design doesn't have timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4100' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FilterCoef
+Compiling module xil_defaultlib.FilterTapSystolicWvldin
+Compiling module xil_defaultlib.subFilter
+Compiling module xil_defaultlib.FilterCoef_block1
+Compiling module xil_defaultlib.FilterCoef_block
+Compiling module xil_defaultlib.Filter
+Compiling module xil_defaultlib.Discrete_FIR_Filter
+Compiling module xil_defaultlib.Compute_Power
+Compiling module xil_defaultlib.MATLAB_Function
+Compiling module xil_defaultlib.Local_Peak
+Compiling module xil_defaultlib.Pulse_Detector
+Compiling module xil_defaultlib.pulse_detector_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulse_detector_TB_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2043.625 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulse_detector_TB_behav -key {Behavioral:sim_1:Functional:pulse_detector_TB} -tclbatch {pulse_detector_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source pulse_detector_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulse_detector_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2045.859 ; gain = 2.234
+current_sim simulation_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Sun Jul  2 22:11:14 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z035fbg676-1
+INFO: [Netlist 29-17] Analyzing 302 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/clock_constraint.xdc]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/clock_constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_1 -jobs 16
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+[Sun Jul  2 22:18:35 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.runs/impl_1/runme.log
+report_power -name {power_1}
+Command: report_power -name power_1
+Running Vector-less Activity Propagation...
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+
+Finished Running Vector-less Activity Propagation
+0 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 302 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.657 . Memory (MB): peak = 2479.871 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.658 . Memory (MB): peak = 2479.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+current_design synth_1
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2647.832 ; gain = 2.047
+close_design
+reset_run synth_1
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 16
+[Mon Jul  3 00:27:14 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.runs/synth_1/runme.log
+set_property top Pulse_Detector [get_filesets sim_1]
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_runs impl_1 -jobs 16
+[Mon Jul  3 00:28:21 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 290 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.602 . Memory (MB): peak = 2649.789 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.603 . Memory (MB): peak = 2649.789 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2649.789 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z035fbg676-1
+INFO: [Netlist 29-17] Analyzing 290 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/clock_constraint.xdc]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/clock_constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2737.648 ; gain = 4.164
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  3 01:27:37 2023...

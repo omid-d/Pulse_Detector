@@ -1,0 +1,15 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Jul  3 00:30:46 2023
+| Host         : DESKTOP-OU2JQNB running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file Pulse_Detector_bus_skew_routed.rpt -pb Pulse_Detector_bus_skew_routed.pb -rpx Pulse_Detector_bus_skew_routed.rpx
+| Design       : Pulse_Detector
+| Device       : 7z035-fbg676
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

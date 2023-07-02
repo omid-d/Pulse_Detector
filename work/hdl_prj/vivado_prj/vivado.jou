@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Jul  2 17:48:46 2023
+# Process ID: 11924
+# Current directory: C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28820 C:\Users\Lenovo\Desktop\proj2\HDL-Coder-Self-Guided-Tutorial-master\pulse_detector\work\hdl_prj\vivado_prj\Pulse_Detector_vivado.xpr
+# Log file: C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/vivado.log
+# Journal file: C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Pulse_Detector.tcl
+file mkdir C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.srcs/sim_1/new/pulse_detector_TB.v w ]
+add_files -fileset sim_1 C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/vivado_prj/Pulse_Detector_vivado.srcs/sim_1/new/pulse_detector_TB.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top pulse_detector_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+set_property used_in_implementation false [get_files  C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Pulse_Detector.v]
+set_property used_in_simulation false [get_files  C:/Users/Lenovo/Desktop/proj2/HDL-Coder-Self-Guided-Tutorial-master/pulse_detector/work/hdl_prj/hdlsrc/pulse_detector_v4/Pulse_Detector.v]
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_simulation
+source pulse_detector_TB.tcl
+close_sim
+launch_simulation
+source pulse_detector_TB.tcl
+close_sim
+launch_simulation
+source pulse_detector_TB.tcl
+close_sim
+launch_simulation
+source pulse_detector_TB.tcl
+close_sim
+launch_simulation
+source pulse_detector_TB.tcl
+close_sim
+launch_simulation
+source pulse_detector_TB.tcl
+current_sim simulation_1
+close_sim
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+report_power -name {power_1}
+open_run impl_1
+current_design synth_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+set_property top Pulse_Detector [get_filesets sim_1]
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+refresh_design
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1

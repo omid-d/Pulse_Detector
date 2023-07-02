@@ -1,0 +1,354 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date             : Mon Jul  3 00:30:43 2023
+| Host             : DESKTOP-OU2JQNB running 64-bit major release  (build 9200)
+| Command          : report_power -file Pulse_Detector_power_routed.rpt -pb Pulse_Detector_power_summary_routed.pb -rpx Pulse_Detector_power_routed.rpx
+| Design           : Pulse_Detector
+| Device           : xc7z035fbg676-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.604        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.402        |
+| Device Static (W)        | 0.201        |
+| Effective TJA (C/W)      | 1.9          |
+| Max Ambient (C)          | 83.9         |
+| Junction Temperature (C) | 26.1         |
+| Confidence Level         | Medium       |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.029 |        3 |       --- |             --- |
+| Slice Logic             |     0.006 |     3546 |       --- |             --- |
+|   LUT as Logic          |     0.005 |      345 |    171900 |            0.20 |
+|   Register              |    <0.001 |     2322 |    343800 |            0.68 |
+|   CARRY4                |    <0.001 |       96 |     54650 |            0.18 |
+|   LUT as Shift Register |    <0.001 |        1 |     70400 |           <0.01 |
+|   Others                |     0.000 |      779 |       --- |             --- |
+| Signals                 |     0.018 |    12924 |       --- |             --- |
+| DSPs                    |     0.349 |      194 |       900 |           21.56 |
+| Static Power            |     0.201 |          |           |                 |
+| Total                   |     0.604 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.455 |       0.402 |      0.053 |
+| Vccaux    |       1.800 |     0.039 |       0.000 |      0.039 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.017 |       0.000 |      0.017 |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                        | Action                                                                                                     |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                               |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks         |                                                                                                            |
+| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                            |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                   |                                                                                                            |
+|                             |            |                                                |                                                                                                            |
+| Overall confidence level    | Medium     |                                                |                                                                                                            |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+| MWCLK | clk    |             5.0 |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------+-----------+
+| Name                    | Power (W) |
++-------------------------+-----------+
+| Pulse_Detector          |     0.402 |
+|   u_Compute_Power       |     0.005 |
+|   u_Discrete_FIR_Filter |     0.384 |
+|     u_FilterBank        |     0.384 |
+|       u_subFilter_1_im  |     0.102 |
+|         u_FilterTap_1   |    <0.001 |
+|         u_FilterTap_10  |     0.002 |
+|         u_FilterTap_11  |     0.002 |
+|         u_FilterTap_12  |     0.002 |
+|         u_FilterTap_13  |     0.002 |
+|         u_FilterTap_14  |     0.002 |
+|         u_FilterTap_15  |     0.002 |
+|         u_FilterTap_16  |     0.002 |
+|         u_FilterTap_17  |     0.002 |
+|         u_FilterTap_18  |     0.002 |
+|         u_FilterTap_19  |     0.002 |
+|         u_FilterTap_2   |     0.001 |
+|         u_FilterTap_20  |     0.002 |
+|         u_FilterTap_21  |     0.002 |
+|         u_FilterTap_22  |     0.002 |
+|         u_FilterTap_23  |     0.002 |
+|         u_FilterTap_24  |     0.002 |
+|         u_FilterTap_25  |     0.002 |
+|         u_FilterTap_26  |     0.002 |
+|         u_FilterTap_27  |     0.002 |
+|         u_FilterTap_28  |     0.002 |
+|         u_FilterTap_29  |     0.002 |
+|         u_FilterTap_3   |     0.001 |
+|         u_FilterTap_30  |     0.002 |
+|         u_FilterTap_31  |     0.002 |
+|         u_FilterTap_32  |     0.002 |
+|         u_FilterTap_33  |     0.002 |
+|         u_FilterTap_34  |     0.002 |
+|         u_FilterTap_35  |     0.002 |
+|         u_FilterTap_36  |     0.002 |
+|         u_FilterTap_37  |     0.002 |
+|         u_FilterTap_38  |     0.002 |
+|         u_FilterTap_39  |     0.002 |
+|         u_FilterTap_4   |     0.001 |
+|         u_FilterTap_40  |     0.002 |
+|         u_FilterTap_41  |     0.002 |
+|         u_FilterTap_42  |     0.002 |
+|         u_FilterTap_43  |     0.002 |
+|         u_FilterTap_44  |     0.002 |
+|         u_FilterTap_45  |     0.002 |
+|         u_FilterTap_46  |     0.002 |
+|         u_FilterTap_47  |     0.002 |
+|         u_FilterTap_48  |     0.002 |
+|         u_FilterTap_49  |     0.002 |
+|         u_FilterTap_5   |     0.001 |
+|         u_FilterTap_50  |     0.002 |
+|         u_FilterTap_51  |     0.002 |
+|         u_FilterTap_52  |     0.002 |
+|         u_FilterTap_53  |     0.002 |
+|         u_FilterTap_54  |     0.002 |
+|         u_FilterTap_55  |     0.002 |
+|         u_FilterTap_56  |     0.002 |
+|         u_FilterTap_57  |     0.002 |
+|         u_FilterTap_58  |     0.002 |
+|         u_FilterTap_59  |     0.002 |
+|         u_FilterTap_6   |     0.001 |
+|         u_FilterTap_60  |     0.002 |
+|         u_FilterTap_61  |     0.002 |
+|         u_FilterTap_62  |     0.002 |
+|         u_FilterTap_63  |     0.002 |
+|         u_FilterTap_64  |     0.003 |
+|         u_FilterTap_7   |     0.002 |
+|         u_FilterTap_8   |     0.002 |
+|         u_FilterTap_9   |     0.002 |
+|       u_subFilter_1_reP |     0.139 |
+|         u_FilterTap_1   |     0.001 |
+|         u_FilterTap_10  |     0.002 |
+|         u_FilterTap_11  |     0.002 |
+|         u_FilterTap_12  |     0.002 |
+|         u_FilterTap_13  |     0.002 |
+|         u_FilterTap_14  |     0.002 |
+|         u_FilterTap_15  |     0.002 |
+|         u_FilterTap_16  |     0.002 |
+|         u_FilterTap_17  |     0.002 |
+|         u_FilterTap_18  |     0.002 |
+|         u_FilterTap_19  |     0.002 |
+|         u_FilterTap_2   |     0.002 |
+|         u_FilterTap_20  |     0.002 |
+|         u_FilterTap_21  |     0.002 |
+|         u_FilterTap_22  |     0.002 |
+|         u_FilterTap_23  |     0.002 |
+|         u_FilterTap_24  |     0.002 |
+|         u_FilterTap_25  |     0.002 |
+|         u_FilterTap_26  |     0.002 |
+|         u_FilterTap_27  |     0.002 |
+|         u_FilterTap_28  |     0.002 |
+|         u_FilterTap_29  |     0.002 |
+|         u_FilterTap_3   |     0.002 |
+|         u_FilterTap_30  |     0.002 |
+|         u_FilterTap_31  |     0.002 |
+|         u_FilterTap_32  |     0.002 |
+|         u_FilterTap_33  |     0.002 |
+|         u_FilterTap_34  |     0.002 |
+|         u_FilterTap_35  |     0.002 |
+|         u_FilterTap_36  |     0.002 |
+|         u_FilterTap_37  |     0.002 |
+|         u_FilterTap_38  |     0.002 |
+|         u_FilterTap_39  |     0.002 |
+|         u_FilterTap_4   |     0.002 |
+|         u_FilterTap_40  |     0.002 |
+|         u_FilterTap_41  |     0.002 |
+|         u_FilterTap_42  |     0.002 |
+|         u_FilterTap_43  |     0.002 |
+|         u_FilterTap_44  |     0.002 |
+|         u_FilterTap_45  |     0.002 |
+|         u_FilterTap_46  |     0.002 |
+|         u_FilterTap_47  |     0.002 |
+|         u_FilterTap_48  |     0.002 |
+|         u_FilterTap_49  |     0.002 |
+|         u_FilterTap_5   |     0.002 |
+|         u_FilterTap_50  |     0.002 |
+|         u_FilterTap_51  |     0.002 |
+|         u_FilterTap_52  |     0.002 |
+|         u_FilterTap_53  |     0.002 |
+|         u_FilterTap_54  |     0.002 |
+|         u_FilterTap_55  |     0.002 |
+|         u_FilterTap_56  |     0.002 |
+|         u_FilterTap_57  |     0.002 |
+|         u_FilterTap_58  |     0.002 |
+|         u_FilterTap_59  |     0.002 |
+|         u_FilterTap_6   |     0.002 |
+|         u_FilterTap_60  |     0.002 |
+|         u_FilterTap_61  |     0.002 |
+|         u_FilterTap_62  |     0.002 |
+|         u_FilterTap_63  |     0.002 |
+|         u_FilterTap_64  |     0.002 |
+|         u_FilterTap_7   |     0.002 |
+|         u_FilterTap_8   |     0.002 |
+|         u_FilterTap_9   |     0.002 |
+|       u_subFilter_1_reS |     0.143 |
+|         u_FilterTap_1   |     0.002 |
+|         u_FilterTap_10  |     0.002 |
+|         u_FilterTap_11  |     0.002 |
+|         u_FilterTap_12  |     0.002 |
+|         u_FilterTap_13  |     0.002 |
+|         u_FilterTap_14  |     0.002 |
+|         u_FilterTap_15  |     0.002 |
+|         u_FilterTap_16  |     0.002 |
+|         u_FilterTap_17  |     0.002 |
+|         u_FilterTap_18  |     0.002 |
+|         u_FilterTap_19  |     0.002 |
+|         u_FilterTap_2   |     0.002 |
+|         u_FilterTap_20  |     0.002 |
+|         u_FilterTap_21  |     0.002 |
+|         u_FilterTap_22  |     0.002 |
+|         u_FilterTap_23  |     0.002 |
+|         u_FilterTap_24  |     0.002 |
+|         u_FilterTap_25  |     0.002 |
+|         u_FilterTap_26  |     0.002 |
+|         u_FilterTap_27  |     0.002 |
+|         u_FilterTap_28  |     0.002 |
+|         u_FilterTap_29  |     0.002 |
+|         u_FilterTap_3   |     0.002 |
+|         u_FilterTap_30  |     0.002 |
+|         u_FilterTap_31  |     0.002 |
+|         u_FilterTap_32  |     0.002 |
+|         u_FilterTap_33  |     0.002 |
+|         u_FilterTap_34  |     0.002 |
+|         u_FilterTap_35  |     0.002 |
+|         u_FilterTap_36  |     0.002 |
+|         u_FilterTap_37  |     0.002 |
+|         u_FilterTap_38  |     0.002 |
+|         u_FilterTap_39  |     0.002 |
+|         u_FilterTap_4   |     0.002 |
+|         u_FilterTap_40  |     0.002 |
+|         u_FilterTap_41  |     0.002 |
+|         u_FilterTap_42  |     0.002 |
+|         u_FilterTap_43  |     0.002 |
+|         u_FilterTap_44  |     0.002 |
+|         u_FilterTap_45  |     0.002 |
+|         u_FilterTap_46  |     0.002 |
+|         u_FilterTap_47  |     0.002 |
+|         u_FilterTap_48  |     0.002 |
+|         u_FilterTap_49  |     0.002 |
+|         u_FilterTap_5   |     0.002 |
+|         u_FilterTap_50  |     0.002 |
+|         u_FilterTap_51  |     0.002 |
+|         u_FilterTap_52  |     0.002 |
+|         u_FilterTap_53  |     0.002 |
+|         u_FilterTap_54  |     0.002 |
+|         u_FilterTap_55  |     0.002 |
+|         u_FilterTap_56  |     0.002 |
+|         u_FilterTap_57  |     0.002 |
+|         u_FilterTap_58  |     0.002 |
+|         u_FilterTap_59  |     0.002 |
+|         u_FilterTap_6   |     0.002 |
+|         u_FilterTap_60  |     0.002 |
+|         u_FilterTap_61  |     0.002 |
+|         u_FilterTap_62  |     0.002 |
+|         u_FilterTap_63  |     0.005 |
+|         u_FilterTap_64  |     0.002 |
+|         u_FilterTap_7   |     0.002 |
+|         u_FilterTap_8   |     0.002 |
+|         u_FilterTap_9   |     0.002 |
+|   u_Local_Peak          |     0.012 |
+|     u_MATLAB_Function   |     0.007 |
++-------------------------+-----------+
+
+
